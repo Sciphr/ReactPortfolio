@@ -58,6 +58,12 @@ header {
   font-size: 0.9rem;
 }
 
+@media screen and (min-width: 2500px) {
+  header {
+    padding-top: 11rem;
+  }
+}
+
 /* For Tablets */
 @media screen and (max-width: 1024px) {
   header {
