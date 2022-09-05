@@ -36,9 +36,11 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lots of stuff Lots of stuff Lots of stuff Lots of stuff Lots of
-            stuff Lots of stuff Lots of stuff Lots of stuff Lots of stuff Lots
-            of stuff
+            After recently starting my journey into Web Development focusing on
+            the React framework and moving into the MERN stack, I have created
+            multiple projects showcasing how each of those technologies can be
+            used. I am currently learning more and creating more projects to
+            showcase what I can do.
           </p>
           <a href="#contact" className="btn btn-primary">
             Send Me A Message!

@@ -1,49 +1,68 @@
 import React from 'react';
 import './Portfolio.css';
-import Image from '../../assets/images/sample.jpg';
+import PortfolioImage from '../../assets/images/Portfolio Project Picture.png';
+import ResumeImage from '../../assets/images/Resume Website Picture.png';
+import SingleUpload from '../../assets/images/MERN Single Upload Picture.png';
+import SeparateImage from '../../assets/images/Separate MERN Picture.png';
+import BackendImage from '../../assets/images/Backend Upload.png';
+import ReduxImage from '../../assets/images/ReduxTestProject.png';
+import CommentQuotePic from '../../assets/images/Comment and Quote Pic.png';
+import FoodAppPic from '../../assets/images/Foodapp.png';
 
 const projectData = [
   {
     id: 1,
-    image: Image,
-    title: 'Test Project',
-    github: 'https://github.com',
-    demo: 'https://github.com',
+    image: PortfolioImage,
+    title: 'Porfolio Website',
+    github: 'https://github.com/Sciphr/ReactPortfolio',
   },
   {
     id: 2,
-    image: Image,
-    title: 'Test Project',
-    github: 'https://github.com',
-    demo: 'https://github.com',
+    image: ResumeImage,
+    title: 'Resume Website',
+    github: 'https://github.com/Sciphr/ResumeWebsite',
+    demo: 'https://sciphr.github.io/ResumeWebsite/',
   },
   {
     id: 3,
-    image: Image,
-    title: 'Test Project',
-    github: 'https://github.com',
-    demo: 'https://github.com',
+    image: SingleUpload,
+    title: 'MERN Project - Single Server Version',
+    github: 'https://github.com/Sciphr/MERN-Single-Server',
+    demo: 'https://single-upload-mern-sciphr.herokuapp.com/',
   },
   {
     id: 4,
-    image: Image,
-    title: 'Test Project',
-    github: 'https://github.com',
-    demo: 'https://github.com',
+    image: SeparateImage,
+    title: 'MERN Project - Separate Server Version',
+    github: 'https://github.com/Sciphr/MERN-Project-Separate-Server',
+    demo: 'https://mern-356718.web.app/',
   },
   {
     id: 5,
-    image: Image,
-    title: 'Test Project',
-    github: 'https://github.com',
-    demo: 'https://github.com',
+    image: BackendImage,
+    title: '**Backend API Upload**',
+    demo: 'https://mern-app-test-sciphr.herokuapp.com/api/users',
   },
   {
     id: 6,
-    image: Image,
-    title: 'Test Project',
-    github: 'https://github.com',
-    demo: 'https://github.com',
+    image: ReduxImage,
+    title: 'React Redux Store Test Project',
+    github: 'https://github.com/Sciphr/React-Redux-Test-Project',
+    demo: 'https://react-redux-test-project-8f263.web.app/',
+  },
+  {
+    id: 7,
+    image: CommentQuotePic,
+    title: 'React Comment and Quote Tracker - Test Project',
+    github: 'https://github.com/Sciphr/Quote-and-Comment-Tracker',
+    demo: 'https://react-http-33f1d.firebaseapp.com/',
+  },
+  {
+    id: 8,
+    image: FoodAppPic,
+    title: 'React Test Food App',
+    github: 'https://github.com/Sciphr/React-Test-Food-App',
+    demo: 'https://quote-and-comment-tracker.web.app/',
   },
 ];
 
@@ -56,20 +75,29 @@ const Porfolio = () => {
       <div className="container portfolio__container">
         {projectData.map(({ id, image, title, github, demo }) => {
           return (
-            <article key={id} className="portfolio__item">
+            <a
+              href={demo}
+              target="__blank"
+              key={id}
+              className="portfolio__item"
+            >
               <div className="portfolio__item-image">
-                <img src={image} alt="Project" />
+                <img src={image} alt="Project" className="projectImage" />
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="__blank">
-                  Github
-                </a>
-                <a href={demo} className="btn btn-primary" target="__blank">
-                  Live Demo
-                </a>
+                {github && (
+                  <a href={github} className="btn" target="__blank">
+                    Github
+                  </a>
+                )}
+                {demo && (
+                  <a href={demo} className="btn btn-primary" target="__blank">
+                    Live Demo
+                  </a>
+                )}
               </div>
-            </article>
+            </a>
           );
         })}
       </div>

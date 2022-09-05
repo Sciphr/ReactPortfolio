@@ -6,42 +6,52 @@ import { AiFillProject } from 'react-icons/ai';
 import { MdContactMail } from 'react-icons/md';
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#');
+  const [activeNav, setActiveNav] = useState('homePage');
+
+  const navHandler = (event) => {
+    let activePage = event.target.id;
+    setActiveNav(activePage);
+  };
 
   return (
     <nav>
       <a
-        href="#"
-        onClick={() => setActiveNav('#')}
-        className={activeNav === '#' ? 'active' : ''}
+        href="#top"
+        id="homePage"
+        onClick={navHandler}
+        className={activeNav === 'homePage' ? 'active' : ''}
       >
         <ImHome3 />
       </a>
       <a
         href="#about"
-        onClick={() => setActiveNav('#about')}
-        className={activeNav === '#about' ? 'active' : ''}
+        id="aboutPage"
+        onClick={navHandler}
+        className={activeNav === 'aboutPage' ? 'active' : ''}
       >
         <ImUser />
       </a>
       <a
         href="#techstack"
-        onClick={() => setActiveNav('#techstack')}
-        className={activeNav === '#techstack' ? 'active' : ''}
+        id="techstackPage"
+        onClick={navHandler}
+        className={activeNav === 'techstackPage' ? 'active' : ''}
       >
         <RiComputerFill />
       </a>
       <a
         href="#portfolio"
-        onClick={() => setActiveNav('#portfolio')}
-        className={activeNav === '#portfolio' ? 'active' : ''}
+        id="portfolioPage"
+        onClick={navHandler}
+        className={activeNav === 'portfolioPage' ? 'active' : ''}
       >
         <AiFillProject />
       </a>
       <a
         href="#contact"
-        onClick={() => setActiveNav('#contact')}
-        className={activeNav === '#contact' ? 'active' : ''}
+        id="contactPage"
+        onClick={navHandler}
+        className={activeNav === 'contactPage' ? 'active' : ''}
       >
         <MdContactMail />
       </a>
