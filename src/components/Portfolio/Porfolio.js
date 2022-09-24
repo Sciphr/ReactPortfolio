@@ -8,6 +8,8 @@ import BackendImage from '../../assets/images/Backend Upload.png';
 import ReduxImage from '../../assets/images/ReduxTestProject.png';
 import CommentQuotePic from '../../assets/images/Comment and Quote Pic.png';
 import FoodAppPic from '../../assets/images/Foodapp.png';
+import BerryTokPic from '../../assets/images/berrytok.png';
+import EcommercePic from '../../assets/images/ecommercesity.png';
 
 const projectData = [
   {
@@ -17,31 +19,18 @@ const projectData = [
     github: 'https://github.com/Sciphr/ReactPortfolio',
   },
   {
-    id: 2,
+    id: 8,
     image: ResumeImage,
     title: 'Resume Website',
     github: 'https://github.com/Sciphr/ResumeWebsite',
     demo: 'https://sciphr.github.io/ResumeWebsite/',
   },
   {
-    id: 3,
+    id: 5,
     image: SingleUpload,
     title: 'MERN Project - Single Server Version',
     github: 'https://github.com/Sciphr/MERN-Single-Server',
     demo: 'https://single-upload-mern-sciphr.herokuapp.com/',
-  },
-  {
-    id: 4,
-    image: SeparateImage,
-    title: 'MERN Project - Separate Server Version',
-    github: 'https://github.com/Sciphr/MERN-Project-Separate-Server',
-    demo: 'https://mern-356718.web.app/',
-  },
-  {
-    id: 5,
-    image: BackendImage,
-    title: '**Backend API Upload**',
-    demo: 'https://mern-app-test-sciphr.herokuapp.com/api/users',
   },
   {
     id: 6,
@@ -58,11 +47,25 @@ const projectData = [
     demo: 'https://react-http-33f1d.firebaseapp.com/',
   },
   {
-    id: 8,
+    id: 4,
     image: FoodAppPic,
     title: 'React Test Food App',
     github: 'https://github.com/Sciphr/React-Test-Food-App',
     demo: 'https://quote-and-comment-tracker.web.app/',
+  },
+  {
+    id: 2,
+    image: EcommercePic,
+    title: 'React ECommerce Site',
+    github: 'https://github.com/Sciphr/MERN-Ecommerce-Test-App',
+    demo: 'https://berryshopapp.herokuapp.com/',
+  },
+  {
+    id: 3,
+    image: BerryTokPic,
+    title: 'React Tik Tok Clone',
+    github: 'https://github.com/Sciphr/Tik-Tok-clone',
+    demo: 'https://berry-tok.vercel.app/',
   },
 ];
 
