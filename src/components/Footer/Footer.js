@@ -5,12 +5,12 @@ import { BsFacebook, BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className="footer__logo">
+      <a href="#about" className="footer__logo">
         Jacob Berry
       </a>
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="#about">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
