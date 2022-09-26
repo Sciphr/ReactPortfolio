@@ -70,6 +70,10 @@ const projectData = [
 ];
 
 const Porfolio = () => {
+  projectData.sort((a, b) => {
+    return a.id - b.id;
+  });
+
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
