@@ -43,7 +43,7 @@ const TechStack = () => {
             <article className="techstack__details">
               <IoCheckmarkDoneCircleSharp className="techstack__details-icon" />
               <div>
-                <h4>Redux/Router Toolset</h4>
+                <h4>Redux/Redux Toolkit</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>

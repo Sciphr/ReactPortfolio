@@ -2,14 +2,15 @@ import React from 'react';
 import './Portfolio.css';
 import PortfolioImage from '../../assets/images/Portfolio Project Picture.png';
 import ResumeImage from '../../assets/images/Resume Website Picture.png';
-import SingleUpload from '../../assets/images/MERN Single Upload Picture.png';
-import SeparateImage from '../../assets/images/Separate MERN Picture.png';
-import BackendImage from '../../assets/images/Backend Upload.png';
-import ReduxImage from '../../assets/images/ReduxTestProject.png';
-import CommentQuotePic from '../../assets/images/Comment and Quote Pic.png';
+import TicketTrackerImage from '../../assets/images/ticket-tracker-screenshot.png';
+import HouseListingsImage from '../../assets/images/house-listings-screenshot.png';
+import GithubImage from '../../assets/images/github-search-screenshot.png';
 import FoodAppPic from '../../assets/images/Foodapp.png';
 import BerryTokPic from '../../assets/images/berrytok.png';
 import EcommercePic from '../../assets/images/ecommercesity.png';
+import EcommercePic2 from '../../assets/images/second-ecommerce-screenshot.png';
+import JobTrackerPic from '../../assets/images/job-tracker-screenshot.png';
+import WeatherAppPic from '../../assets/images/weather-app-screenshot.png';
 
 const projectData = [
   {
@@ -27,24 +28,24 @@ const projectData = [
   },
   {
     id: 5,
-    image: SingleUpload,
-    title: 'MERN Project - Single Server Version',
-    github: 'https://github.com/Sciphr/MERN-Single-Server',
-    demo: 'https://single-upload-mern-sciphr.herokuapp.com/',
+    image: TicketTrackerImage,
+    title: 'Support Desk/Ticket Tracker - MERN',
+    github: 'https://github.com/Sciphr/Berry-Ticket-Tracker-app',
+    demo: 'https://berry-ticket-tracker.netlify.app/',
   },
   {
     id: 6,
-    image: ReduxImage,
-    title: 'React Redux Store Test Project',
-    github: 'https://github.com/Sciphr/React-Redux-Test-Project',
-    demo: 'https://react-redux-test-project-8f263.web.app/',
+    image: HouseListingsImage,
+    title: 'House Listings - Firestore App',
+    github: 'https://github.com/Sciphr/Berry-House-Listings-App',
+    demo: 'https://berry-house-listings.netlify.app/',
   },
   {
     id: 7,
-    image: CommentQuotePic,
-    title: 'React Comment and Quote Tracker - Test Project',
-    github: 'https://github.com/Sciphr/Quote-and-Comment-Tracker',
-    demo: 'https://react-http-33f1d.firebaseapp.com/',
+    image: GithubImage,
+    title: 'Github Profile Search',
+    github: 'https://github.com/Sciphr/Berry-Github-Finder',
+    demo: 'https://berry-github-finder.netlify.app/',
   },
   {
     id: 4,
@@ -67,9 +68,30 @@ const projectData = [
     github: 'https://github.com/Sciphr/Tik-Tok-clone',
     demo: 'https://berry-tok.vercel.app/',
   },
+  {
+    id: 9,
+    image: EcommercePic2,
+    title: 'Ecommerce Shop 2',
+    github: 'https://github.com/Sciphr/Berry-Shop-2',
+    demo: 'https://berry-shop-two.vercel.app/',
+  },
+  {
+    id: 10,
+    image: JobTrackerPic,
+    title: 'Job Tracker',
+    github: 'https://github.com/Sciphr/Job-Tracker',
+    demo: 'https://berry-job-tracker.up.railway.app/',
+  },
+  {
+    id: 11,
+    image: WeatherAppPic,
+    title: 'Check Weather (Cities of 1 mil pop. only)',
+    github: 'https://github.com/Sciphr/React-Test-Weather-App',
+    demo: 'https://react-weather-app-test-project.web.app/',
+  },
 ];
 
-const Porfolio = () => {
+const Portfolio = () => {
   projectData.sort((a, b) => {
     return a.id - b.id;
   });
@@ -112,4 +134,4 @@ const Porfolio = () => {
   );
 };
 
-export default Porfolio;
+export default Portfolio;
